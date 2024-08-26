@@ -7,3 +7,11 @@
     width:max-content; 
     display: flex;
   }
+  
+
+@media (min-width: 1024px) { 
+  .panel-width {
+    width: 1024px;
+    
+  }
+} 
