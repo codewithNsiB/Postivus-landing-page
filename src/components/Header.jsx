@@ -5,10 +5,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
   Button,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
+  
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -30,22 +27,16 @@ export default function Header() {
       <Disclosure as="nav" className="bg-gray-800 fixed w-full z-10">
         <div className="flex justify-between items-center mt-2 ml-24 px-6 max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center flex-shrink-0  mt-2">
-            {/* Images on the left */}
+            
             <div className="flex gap-1 items-center justify-between">
               <img
                 alt="icon"
                 src="/Icon.png"
                 className="h-6 w-auto"
               />
-              {/* <img
-                alt="name"
-                src="/Positivus.png"
-                className="h-6 w-auto"
-              /> */}
+            
               <h1 className="text-3xl font-medium	">Positivus</h1>
             </div>
-
-            {/* Menu icon on the right */}
             <div className="flex items-center sm:hidden">
               <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-green ">
                 <span className="absolute -inset-0.5" />
@@ -80,7 +71,7 @@ export default function Header() {
                     {item.name}
                   </a>
                 ))}
-                <Button className="rounded py-2 px-4 border-solid border border-black hover:bg-black hover:text-white">
+                <Button className="rounded py-2 px-4 border-solid border border-black hover:bg-green hover:text-black">
                 Get Started
                 </Button>
               </div>

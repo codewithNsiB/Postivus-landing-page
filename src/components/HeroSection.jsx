@@ -28,7 +28,7 @@ export default function HeroSection() {
             <br />
             and content creation.
           </p>
-          <Button className="rounded py-2 px-4 bg-black text-white hover:bg-green hover:text-black">
+          <Button className="rounded py-4 px-4 bg-black text-white hover:bg-green hover:text-black hover:border-b-8 rounded-[12px] ">
             Book a consultation
           </Button>
         </div>

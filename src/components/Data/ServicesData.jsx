@@ -13,8 +13,8 @@ export const servicesData = [
   },
   {
     id: 2,
-    text1: "Pay-per-click",
-    text2: "advertising",
+    text1: "Pay per click",
+    text2: "Advertising",
     background:
       "h-[310px] p-12 bg-green rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     arrow: "../../../public/black arrow.png",
@@ -61,7 +61,7 @@ export const servicesData = [
   },
   {
     id: 6,
-    text1: "Analytics and",
+    text1: "Analytics &",
     text2: "Tracking",
     background:
       "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
