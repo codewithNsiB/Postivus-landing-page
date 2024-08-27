@@ -12,7 +12,7 @@ export default function Contact() {
           Connect with Us: Let's Discuss Your Digital Marketing Needs
         </p>
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-center bg-gray mx-4 md:mx-28 p-4 md:p-8 rounded-lg">
+      <div className="flex flex-col md:flex-row justify-between items-center rounded-[45px] bg-gray mx-4 md:mx-28 p-4 md:p-8">
         <div className="form-div w-full md:w-[34.75rem]">
           <form>
             <div className="mb-4">
@@ -20,7 +20,7 @@ export default function Contact() {
                 <input
                   type="radio"
                   name="contactOption"
-                  className="w-4 h-4 rounded-full bg-white border border-gray focus:ring-green checked:bg-green checked:border-green appearance-none cursor-pointer"
+                  className="w-4 h-4 rounded-full bg-white border border-gray focus:ring-green checked:bg-green appearance-none cursor-pointer"
                 />
                 <span className="ml-2">Say hi</span>
               </label>
@@ -29,14 +29,17 @@ export default function Contact() {
                 <input
                   type="radio"
                   name="contactOption"
-                  className="w-4 h-4 rounded-full bg-white border border-grayfocus:ring-green checked:bg-green checked:border-green appearance-none cursor-pointer"
+                  className="w-4 h-4 rounded-full bg-white border border-gray focus:ring-green checked:bg-green checked:border-green appearance-none cursor-pointer"
                 />
                 <span className="ml-2">Get a quote</span>
               </label>
             </div>
 
             <div className="mb-4">
-              <label className="block text-gray text-sm font-bold mb-2" htmlFor="name">
+              <label
+                className="block text-black  text-sm font-bold mb-2"
+                htmlFor="name"
+              >
                 Name
               </label>
               <input
@@ -49,7 +52,10 @@ export default function Contact() {
             </div>
 
             <div className="mb-4">
-              <label className="block text-gray text-sm font-bold mb-2" htmlFor="email">
+              <label
+                className="block text-black text-sm font-bold mb-2"
+                htmlFor="email"
+              >
                 Email
               </label>
               <input
@@ -62,7 +68,10 @@ export default function Contact() {
             </div>
 
             <div className="mb-4">
-              <label className="block text-gray text-sm font-bold mb-2" htmlFor="message">
+              <label
+                className="block text-black text-sm font-bold mb-2"
+                htmlFor="message"
+              >
                 Message
               </label>
               <textarea
@@ -84,17 +93,15 @@ export default function Contact() {
             </div>
           </form>
         </div>
-        
 
-        <div className="hidden md:flex md:justify-end md:w-4/12 md:py-2">
+        <div className="hidden md:flex md:justify-end md:w-4/12 md:py-2 relative">
           <img
             src="/public/form-img.png"
             alt="Contact Form Image"
-            className=" img-style w-full max-w-xs md:max-w-sm lg:max-w-2xl"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 w-auto md:w-full"
           />
         </div>
       </div>
-     
     </>
   );
 }

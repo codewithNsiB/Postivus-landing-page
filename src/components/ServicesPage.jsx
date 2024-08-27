@@ -16,8 +16,8 @@ export default function ServicesPage() {
         </p>
       </div>
 
-      <div className="flex flex-col mx-24 items-center py-5 ">
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="flex flex-col mx-12 items-center p-14">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 ">
           {servicesData.map(
             ({
               background,
@@ -28,18 +28,19 @@ export default function ServicesPage() {
               image,
               textColor1,
               textColor2,
+              textWhite,
             }) => (
               <div className={`${background} border-b-8 rounded-[25px] `}>
                 <div className="flex flex-col justify-center items-start gap-24">
                   <div className="flex flex-col justify-start items-start">
-                    <div className="px-2 bg-green-500 rounded-md flex flex-col justify-start items-start gap-2.5">
+                    <div className="px-2 bg-green rounded-md flex flex-col justify-start items-start gap-2.5">
                       <div
                         className={`text-3xl font-medium rounded ${textColor1}`}
                       >
                         {text1}
                       </div>
                     </div>
-                    <div className="px-2 bg-green-500 rounded-md flex flex-col justify-start items-start gap-2.5">
+                    <div className="px-2 bg-green rounded-md flex flex-col justify-start items-start gap-2.5">
                       <div
                         className={`text-3xl font-medium rounded ${textColor2}`}
                       >
@@ -54,7 +55,7 @@ export default function ServicesPage() {
                     <div className="relative w-10 h-10">
                       <img className="absolute w-full h-full" src={arrow} />
                     </div>
-                    <div className="text-xl font-normal leading-7">
+                    <div className={`text-xl font-normal leading-7 rounded ${textWhite}`}>
                       Learn more
                     </div>
                   </a>

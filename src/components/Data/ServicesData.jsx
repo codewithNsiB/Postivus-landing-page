@@ -22,6 +22,7 @@ export const servicesData = [
     image: "../../../public/2nd card icon.png",
     textColor1: "bg-white", 
     textColor2: "bg-white",
+    
   },
   {
     id: 3,
@@ -34,6 +35,7 @@ export const servicesData = [
     image: "../../../public/3rd card icon.png",
     textColor1: "bg-white", 
     textColor2: "bg-white",
+    textWhite: "text-white",
   },
   {
     id: 4,
@@ -70,5 +72,6 @@ export const servicesData = [
     image: "../../../public/6th card icon.png",
     textColor1: "bg-green", 
     textColor2: "bg-green",
+    textWhite: "text-white",
   },
 ];

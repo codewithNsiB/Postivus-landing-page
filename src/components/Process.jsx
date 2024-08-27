@@ -7,7 +7,7 @@ export default function Process() {
 
   return (
     <>
-      <div className="mx-28 mt-16 mb-11 gap-2 items-center flex">
+      <div className="mt-16 mb-11 ml-28 gap-2 items-center flex">
         <Button className="rounded-lg text-xl font-bold py-2 px-4 bg-green text-black">
         Our Working Process
         </Button>
@@ -15,7 +15,7 @@ export default function Process() {
         Step-by-Step Guide to Achieving Your Business Goals
         </p>
         </div>
-      <div className="max-w-4xl mx-28 grid grid-cols-1 gap-4">
+      <div className="max-w-7xl mx-28 grid grid-cols-1 gap-4">
         {processData.map((panel, index) => (
           <Panel
             key={panel.id}
@@ -23,7 +23,7 @@ export default function Process() {
             title={panel.label}
             isActive={activeIndex === index}
             onShow={() => setActiveIndex(index)}
-            className="border-b-8 rounded-[25px] mb-4"
+            className="border-b-8 rounded-[25px] mx-auto w-full mb-4"
           >
             {panel.content}
           </Panel>

@@ -16,7 +16,7 @@ function classNames(...classes) {
 export default function Footer() {
   return (
     <>
-      <footer className="bg-black text-white mx-8 md:mx-28 mt-20 rounded-lg py-8 px-6">
+      <footer className="bg-black text-white mx-14 md:mx-24 mt-20 rounded-t-[45px] py-8 px-6">
         <div className="flex gap-4 items-center justify-between">
           <img alt="icon" src="/public/pro.png" className="h-6 w-auto" />
           <div className="flex space-x-4 items-center">
@@ -46,7 +46,7 @@ export default function Footer() {
               Contact us
             </Button>
             <p className="mt-4 text-white">Email: info@positivus.com</p>
-            <p className="text-white">Phone: 555-567-8901</p>
+            <p className="text-white my-4">Phone: 555-567-8901</p>
             <p className="text-white">
               Address: 1234 Main St <br />
               Moonstone City, Stardust State 12345

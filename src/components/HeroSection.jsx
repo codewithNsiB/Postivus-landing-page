@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <>
       <div className="pt-16 mt-4 mx-auto flex flex-col md:flex-row items-center justify-between">
-        <div className="text-center md:text-left md:ml-28">
+        <div className="text-center md:text-left md:ml-24">
           <h1 className="text-3xl md:text-4xl font-medium">
             Navigating the digital
             <br />

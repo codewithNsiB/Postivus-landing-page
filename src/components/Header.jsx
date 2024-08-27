@@ -24,8 +24,8 @@ function classNames(...classes) {
 export default function Header() {
   return (
     <div className="mx-auto">
-      <Disclosure as="nav" className="bg-gray-800 fixed w-full z-10">
-        <div className="flex justify-between items-center mt-2 ml-24 px-6 max-w-7xl px-2 sm:px-6 lg:px-8">
+      <Disclosure as="nav" className="fixed px-1 w-full z-10">
+        <div className="flex justify-between items-center mt-2 ml-24 px-2 max-w-7xl px-2 sm:px-6 lg:px-2">
           <div className="relative flex items-center flex-shrink-0  mt-2">
             
             <div className="flex gap-1 items-center justify-between">
