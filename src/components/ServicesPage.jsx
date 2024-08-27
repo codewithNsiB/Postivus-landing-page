@@ -5,11 +5,11 @@ import { servicesData } from "./Data/ServicesData";
 export default function ServicesPage() {
   return (
     <>
-      <div className="ml-28 mt-32 mb-5 gap-4 items-center flex">
-        <Button className="rounded-lg text-2xl font-bold py-4 px-8 bg-green text-black">
+      <div className="md:ml-28 mt-32 mb-5 gap-4 items-center sm:flex">
+        <Button className="rounded-lg text-2xl font-bold py-4 px-8 bg-green text-blackw-full sm:w-auto ">
           Services
         </Button>
-        <p className="">
+        <p className="mb-4">
           At our digital marketing agency, we offer a range of services to{" "}
           <br /> help businesses grow and succeed online. These services
           include:

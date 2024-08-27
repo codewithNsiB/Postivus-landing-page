@@ -12,9 +12,9 @@ const images = [Amazon, Dribble, Notion, Netflix, Zoom, Hubspot];
 export default function HeroSection() {
   return (
     <>
-      <div className="pt-16 mt-4 mx-auto flex flex-col md:flex-row items-center justify-between">
-        <div className="text-center md:text-left md:ml-24">
-          <h1 className="text-3xl md:text-4xl font-medium">
+      <div className="pt-16 mt-4 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between ">
+        <div className="text-left mx-4 mt-4 md:text-left md:ml-24">
+          <h1 className="text-4xl md:text-4xl font-medium">
             Navigating the digital
             <br />
             landscape for success
@@ -28,7 +28,7 @@ export default function HeroSection() {
             <br />
             and content creation.
           </p>
-          <Button className="rounded py-4 px-4 bg-black text-white hover:bg-green hover:text-black hover:border-b-8 rounded-[12px] ">
+          <Button className="rounded py-4 px-4 bg-black text-white hover:bg-green hover:text-black hover:border-b-8 rounded-[12px] w-full sm:w-auto">
             Book a consultation
           </Button>
         </div>
@@ -37,7 +37,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="relative w-full mt-14 overflow-hidden">
-        <div className="flex whitespace-nowrap animate-scroll">
+        <div className="flex grid grid-rows-2 gap-4sm:flex sm:whitespace-nowrap sm:animate-scroll whitespace-nowrap animate-scroll">
           {images.map((src, index) => (
             <img
               key={index}
@@ -55,7 +55,9 @@ export default function HeroSection() {
             />
           ))}
         </div>
-      </div>
+      </div> 
+
+
     </>
   );
 }

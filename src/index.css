@@ -6,6 +6,7 @@
 .animate-scroll {
     width:max-content; 
     display: flex;
+    animation: scroll 30s linear infinite;
   }
   
   /* .custom-radio {

@@ -1,13 +1,11 @@
-
 import React from "react";
 import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
   Button,
-  
 } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "About Us", href: "#", current: false },
@@ -25,56 +23,50 @@ export default function Header() {
   return (
     <div className="mx-auto">
       <Disclosure as="nav" className="fixed px-1 w-full z-10">
-        <div className="flex justify-between items-center mt-2 ml-24 px-2 max-w-7xl px-2 sm:px-6 lg:px-2">
-          <div className="relative flex items-center flex-shrink-0  mt-2">
-            
-            <div className="flex gap-1 items-center justify-between">
-              <img
-                alt="icon"
-                src="/Icon.png"
-                className="h-6 w-auto"
-              />
-            
-              <h1 className="text-3xl font-medium	">Positivus</h1>
-            </div>
-            <div className="flex items-center sm:hidden">
-              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-green ">
-                <span className="absolute -inset-0.5" />
-                <span className="sr-only">Open main menu</span>
-                <Bars3Icon
-                  aria-hidden="true"
-                  className="block h-6 w-6  group-data-[open]:hidden"
-                />
-                <XMarkIcon
-                  aria-hidden="true"
-                  className="hidden h-6 w-6 group-data-[open]:block"
-                />
-              </DisclosureButton>
-            </div>
+        <div className="flex justify-between items-center mt-2 md:ml-24  px-2 max-w-7xl sm:px-6 lg:px-2 sm:mb-12">
+          <div className="flex items-center py-3 mt-2 sm:gap-20">
+            <img
+              alt="icon"
+              src="/public/black logo.png"
+              className="h-6 w-auto"
+            />
           </div>
 
-          <div>
-            <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4 mr-24">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    aria-current={item.current ? "page" : undefined}
-                    className={classNames(
-                      item.current
-                        ? "bg-gray-600 text-dark"
-                        : "text-gray-300 hover: hover:text-gray",
-                      "rounded-md px-3 py-2 text-sm font-medium"
-                    )}
-                  >
-                    {item.name}
-                  </a>
-                ))}
-                <Button className="rounded py-2 px-4 border-solid border border-black hover:bg-green hover:text-black">
-                Get Started
-                </Button>
-              </div>
+          <div className="flex items-center sm:hidden">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-green ">
+              <span className="absolute -inset-0.5" />
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon
+                aria-hidden="true"
+                className="block h-6 w-6 group-data-[open]:hidden"
+              />
+              <XMarkIcon
+                aria-hidden="true"
+                className="hidden h-6 w-6 group-data-[open]:block"
+              />
+            </DisclosureButton>
+          </div>
+
+          <div className="hidden sm:flex sm:ml-6">
+            <div className="flex space-x-4 mr-24">
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  aria-current={item.current ? "page" : undefined}
+                  className={classNames(
+                    item.current
+                      ? "bg-gray text-dark"
+                      : "text-black hover: hover:text-gray",
+                    "rounded-md px-3 py-2 text-sm font-medium"
+                  )}
+                >
+                  {item.name}
+                </a>
+              ))}
+              <Button className="rounded-[10px] py-2 px-2 border-solid border border-black hover:bg-green hover:text-black">
+                Request a quote
+              </Button>
             </div>
           </div>
         </div>
@@ -89,8 +81,8 @@ export default function Header() {
                 aria-current={item.current ? "page" : undefined}
                 className={classNames(
                   item.current
-                    ? "bg-gray-900 text-white"
-                    : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    ? "bg-gray text-white"
+                    : "text-black hover:bg-gray hover:text-white",
                   "block rounded-md px-3 py-2 text-base font-medium"
                 )}
               >
@@ -98,7 +90,7 @@ export default function Header() {
               </DisclosureButton>
             ))}
             <Button className="rounded py-2 px-4 border-solid border border-black hover:bg-black hover:text-white">
-            Get Started
+              Get Started
             </Button>
           </div>
         </DisclosurePanel>
