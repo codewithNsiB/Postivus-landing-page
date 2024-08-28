@@ -27,7 +27,7 @@ export default function Header() {
           <div className="flex items-center py-3 mt-2 sm:gap-20">
             <img
               alt="icon"
-              src="/public/black logo.png"
+              src="/black logo.png"
               className="h-6 w-auto"
             />
           </div>

@@ -18,7 +18,7 @@ export default function Footer() {
     <>
       <footer className=" relative bg-black text-white mx-4 md:mx-24 mt-20 rounded-t-[45px] py-8 px-6">
         <div className="md:flex block gap-4 items-center justify-between ">
-          <img alt="icon" src="/public/pro.png" className="h-6 w-auto " />
+          <img alt="icon" src="/pro.png" className="h-6 w-auto " />
           <div className="md:flex flex flex-wrap items-center">
             {navigation.map((item) => (
               <a
@@ -35,9 +35,9 @@ export default function Footer() {
                 {item.name}
               </a>
             ))}
-            <img src="/public/Linkedinwhite.png" alt="LinkedIn" className="absolute -bottom-0 w-6 h-6 " />
-            <img src="/public/twitter.png" alt="Twitter" className="absolute -bottom-0 w-6 h-6 " />
-            <img src="/public/fb.png" alt="Facebook" className="absolute -bottom-0 w-6 h-6 " />
+            <img src="/Linkedinwhite.png" alt="LinkedIn" className="absolute -bottom-0 w-6 h-6 " />
+            <img src="/twitter.png" alt="Twitter" className="absolute -bottom-0 w-6 h-6 " />
+            <img src="/fb.png" alt="Facebook" className="absolute -bottom-0 w-6 h-6 " />
           </div>
         </div>
         <div className="mt-8 mb-6 flex flex-col md:flex-row justify-between">

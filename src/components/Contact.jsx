@@ -96,7 +96,7 @@ export default function Contact() {
 
         <div className="hidden md:flex md:justify-end md:w-4/12 md:py-2 relative">
           <img
-            src="/public/form-img.png"
+            src="/form-img.png"
             alt="Contact Form Image"
             className="absolute right-0 top-1/2 transform -translate-y-1/2 w-auto md:w-full"
           />

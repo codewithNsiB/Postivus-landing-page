@@ -52,7 +52,7 @@ function Panel({
         <div><span>{id}</span>
         <span className="ml-4">{title}</span></div>
         <img
-          src={isActive ? "/public/Minus icon (1).png" : "/public/Plus icon.png"}
+          src={isActive ? "/Minus icon (1).png" : "/Plus icon.png"}
           alt=""
           className="h-8 w-auto ml-4"
         />

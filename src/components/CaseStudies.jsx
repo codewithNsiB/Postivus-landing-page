@@ -13,8 +13,6 @@ export default function CaseStudies() {
           Success through Our Case Studies
         </p>
       </div>
-      
-
       <div className="flex flex-col items-center max-w-7xl mt-11 my-3 mx-4 md:mx-28 p-2 md:p-6 bg-black text-white rounded-[45px]">
         <div className="w-full rounded-[22px] flex justify-start items-start gap-2 md:gap-8 text-white p-2 md:p-6">
           <div className="grid grid-cols-1 gap-2 divide-y divide-white md:grid-cols-3 md:gap-1 md:divide-y-0 md:divide-x">
@@ -28,7 +26,7 @@ export default function CaseStudies() {
                 <div className="text-green text-lg font-normal leading-6">
                   Learn more
                 </div>
-                <img src="/public/casestudy arrow.png" alt="arrow" />
+                <img src="/casestudy arrow.png" alt="arrow" />
               </div>
             </div>
             <div className="flex flex-col items-start gap-3 p-2 md:px-4 py-3 md:py-1">
@@ -41,7 +39,7 @@ export default function CaseStudies() {
                 <div className="text-green text-lg font-normal leading-6">
                   Learn more
                 </div>
-                <img src="/public/casestudy arrow.png" alt="arrow" />
+                <img src="/casestudy arrow." alt="arrow" />
               </div>
             </div>
             <div className="flex flex-col items-start gap-3 p-2 md:px-4 py-3 md:py-1">
@@ -54,7 +52,7 @@ export default function CaseStudies() {
                 <div className="text-green text-lg font-normal leading-6">
                   Learn more
                 </div>
-                <img src="/public/casestudy arrow.png" alt="arrow" />
+                <img src="/casestudy arrow.png" alt="arrow" />
               </div>
             </div>
           </div>

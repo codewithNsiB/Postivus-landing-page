@@ -90,7 +90,7 @@ export default function ServicesPage() {
             </div>
           </div>
           <div className="hidden md:flex justify-center -m-20">
-            <img src="/public/7th card icon.png" width="50%" alt="icon" />
+            <img src="/7th card icon.png" width="50%" alt="icon" />
           </div>
         </div>
       </div>
