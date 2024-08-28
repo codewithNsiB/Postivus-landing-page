@@ -4,16 +4,18 @@ import { Button } from "@headlessui/react";
 export default function CaseStudies() {
   return (
     <>
-      <div className="mx-28 mt-16 mb-5 gap-2 items-center flex">
-        <Button className="rounded-lg text-xl font-bold py-2 px-4 bg-green text-black">
+      <div className="md:mx-28 mt-16 mb-5 gap-2 items-center  md:flex sm:justify-start mx-4 justify-center text-center">
+        <Button className="rounded-lg text-2xl font-bold py-4 px-4 bg-green text-black w-full sm:w-auto mb-8 sm:mb-0">
           Case Studies
         </Button>
-        <p className="text-sm">
+        <p className="text-sm sm:text-left text-center">
           Explore Real-Life Examples of Our Proven Digital Marketing <br />{" "}
           Success through Our Case Studies
         </p>
       </div>
-      <div className="flex flex-col items-center max-w-7xl mt-11 my-3 mx-2 md:mx-28 p-2 md:p-6 bg-black text-white rounded-[45px]">
+      
+
+      <div className="flex flex-col items-center max-w-7xl mt-11 my-3 mx-4 md:mx-28 p-2 md:p-6 bg-black text-white rounded-[45px]">
         <div className="w-full rounded-[22px] flex justify-start items-start gap-2 md:gap-8 text-white p-2 md:p-6">
           <div className="grid grid-cols-1 gap-2 divide-y divide-white md:grid-cols-3 md:gap-1 md:divide-y-0 md:divide-x">
             <div className="flex flex-col items-start gap-3 p-2 md:px-4 py-3 md:py-1">
