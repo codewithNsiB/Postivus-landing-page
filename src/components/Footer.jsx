@@ -16,10 +16,10 @@ function classNames(...classes) {
 export default function Footer() {
   return (
     <>
-      <footer className="bg-black text-white mx-14 md:mx-24 mt-20 rounded-t-[45px] py-8 px-6">
-        <div className="flex gap-4 items-center justify-between">
-          <img alt="icon" src="/public/pro.png" className="h-6 w-auto" />
-          <div className="flex space-x-4 items-center">
+      <footer className=" relative bg-black text-white mx-4 md:mx-24 mt-20 rounded-t-[45px] py-8 px-6">
+        <div className="md:flex block gap-4 items-center justify-between ">
+          <img alt="icon" src="/public/pro.png" className="h-6 w-auto " />
+          <div className="md:flex flex flex-wrap items-center">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -35,9 +35,9 @@ export default function Footer() {
                 {item.name}
               </a>
             ))}
-            <img src="/public/Linkedinwhite.png" alt="LinkedIn" className="w-6 h-6" />
-            <img src="/public/twitter.png" alt="Twitter" className="w-6 h-6" />
-            <img src="/public/fb.png" alt="Facebook" className="w-6 h-6" />
+            <img src="/public/Linkedinwhite.png" alt="LinkedIn" className="absolute -bottom-0 w-6 h-6 " />
+            <img src="/public/twitter.png" alt="Twitter" className="absolute -bottom-0 w-6 h-6 " />
+            <img src="/public/fb.png" alt="Facebook" className="absolute -bottom-0 w-6 h-6 " />
           </div>
         </div>
         <div className="mt-8 mb-6 flex flex-col md:flex-row justify-between">
@@ -58,12 +58,12 @@ export default function Footer() {
               id="email"
               name="email"
               placeholder="Email"
-              className=" py-2 px-2 mr-3 text-gray bg-dark border border-gray rounded-md focus:outline-none focus:border-green focus:ring-1 focus:ring-green"
+              className=" py-2 px-2 mb-3 md:mr-3 text-gray bg-dark border border-gray rounded-md focus:outline-none focus:border-green focus:ring-1 focus:ring-green"
               required
             />
             <Button
               type="submit"
-              className="  py-3 px-2 bg-green text-black text-sm rounded-md "
+              className="  md:py-3 md:px-2 px-12 py-3 bg-green text-black text-sm rounded-md "
             >
               Subscribe to news
             </Button>

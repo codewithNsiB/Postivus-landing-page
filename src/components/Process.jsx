@@ -7,15 +7,15 @@ export default function Process() {
 
   return (
     <>
-      <div className="mt-16 mb-11 ml-28 gap-2 items-center flex">
-        <Button className="rounded-lg text-xl font-bold py-2 px-4 bg-green text-black">
-        Our Working Process
-        </Button>
-        <p className="text-sm">
-        Step-by-Step Guide to Achieving Your Business Goals
-        </p>
-        </div>
-      <div className="max-w-7xl mx-28 grid grid-cols-1 gap-4">
+        <div className="md:ml-28 mt-32 mb-5 gap-4 items-center sm:flex sm:justify-start mx-4 justify-center text-center">
+  <Button className="rounded-lg text-2xl font-bold py-4 px-8 bg-green text-black w-full sm:w-auto mb-8 sm:mb-0">
+    Our Working Process
+  </Button>
+  <p className="sm:text-left text-center">
+  Step-by-Step Guide to Achieving Your Business Goals
+  </p>
+</div>
+      <div className="max-w-7xl mx-4 md:mx-28 grid grid-cols-1 gap-4">
         {processData.map((panel, index) => (
           <Panel
             key={panel.id}

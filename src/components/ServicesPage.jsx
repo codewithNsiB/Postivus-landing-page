@@ -16,7 +16,7 @@ export default function ServicesPage() {
   </p>
 </div>
 
-{/* 
+
       <div className="flex flex-col md:mx-12 items-center p-14">
         <div className="grid grid-cols-1 w-full sm:grid-cols-1 md:grid-cols-2 gap-8 ">
           {servicesData.map(
@@ -68,59 +68,8 @@ export default function ServicesPage() {
             )
           )}
         </div>
-      </div> */}
-      <div className="flex flex-col md:mx-12 items-center p-14">
-  <div className="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8">
-    {servicesData.map(
-      ({
-        background,
-        text1,
-        text2,
-        arrow,
-        link,
-        image,
-        textColor1,
-        textColor2,
-        textWhite,
-      }) => (
-        <div className={`${background} border-b-8 rounded-[25px]`}>
-          <div className="flex flex-col justify-center items-start md:gap-24">
-            <div className="flex flex-col justify-start items-start">
-              <div className="px-2 bg-green rounded-md flex flex-col justify-start items-start gap-2.5">
-                <div className={`text-3xl font-medium rounded ${textColor1}`}>
-                  {text1}
-                </div>
-              </div>
-              <div className="px-2 bg-green rounded-md flex flex-col justify-start items-start gap-2.5">
-                <div className={`text-3xl font-medium rounded ${textColor2}`}>
-                  {text2}
-                </div>
-              </div>
-            </div>
-            <a
-              className="flex justify-start items-center gap-4"
-              href={link}
-            >
-              <div className="relative w-10 h-10">
-                <img className="absolute w-full h-full" src={arrow} />
-              </div>
-              <div className={`text-xl font-normal leading-7 rounded ${textWhite}`}>
-                Learn more
-              </div>
-            </a>
-          </div>
-          <div className="flex justify-center items-center w-52 h-44 w-full h-auto pt-0.5 pb-2 md:flex">
-            <img
-              src={image}
-              className="w-full h-4 max-w-lg sm:max-w-full"
-              alt="Service"
-            />
-          </div>
-        </div>
-      )
-    )}
-  </div>
-</div>
+      </div> 
+
 
 
       <div className="flex flex-col mt-8 mx-4 md:flex-row items-center my-6 md:mx-28 p-8 h-[347px] bg-gray rounded-[45px]">

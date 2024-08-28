@@ -9,7 +9,7 @@ export default function Team() {
   return (
     <>
       <div className="mx-4 md:mx-28 mt-16 mb-11 gap-2 items-center flex flex-col md:flex-row text-center md:text-left">
-        <Button className="rounded-lg text-xl font-bold py-2 px-4 bg-green text-black">
+        <Button className="rounded-lg text-xl font-bold py-2 px-8 bg-green text-black">
           Team
         </Button>
         <p className="text-sm mt-2 md:mt-0 md:ml-4">
@@ -18,7 +18,7 @@ export default function Team() {
         </p>
       </div>
 
-      <div className="px-4 md:px-28 py-5" id="team">
+      <div className=" mx-4 md:px-28 py-5" id="team">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
           {duplicatedTeamData.map(({ title, text, name, link, img }, index) => (
             <div
@@ -51,7 +51,7 @@ export default function Team() {
       </div>
 
       <div className="w-full flex justify-center md:justify-end items-center mt-8 ">
-        <Button className="px-8 py-4 bg-black bg-black text-white hover:bg-green hover:text-black hover:border-b-8 rounded-[12px] mr-32 ">
+        <Button className="px-8 py-4 bg-black bg-black text-white hover:bg-green hover:text-black hover:border-b-8 rounded-[12px] md:mr-14 w-full sm:w-auto mb-8 sm:mb-0 mx-4 ">
           See all team
         </Button>
       </div>
