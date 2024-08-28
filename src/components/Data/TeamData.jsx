@@ -6,7 +6,7 @@ export const teamData = [
     name: "John Smith",
     text:
       "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
-    img: "/public/Picture1.png",
+    img: "/Picture1.png",
     link: "/",
   },
   {
@@ -14,7 +14,7 @@ export const teamData = [
     name: "Jane Doe",
     text:
       "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
-    img: "/public/Picture2.png",
+    img: "/Picture2.png",
     link: "/",
   },
   {
@@ -22,7 +22,7 @@ export const teamData = [
     name: "Michael Brown",
     text:
       "5+ years of experience in SEO and content creation. Proficient in idword research and on-page optimization",
-    img: "/public/Picture3.png",
+    img: "/Picture3.png",
     link: "/",
   },
 ];

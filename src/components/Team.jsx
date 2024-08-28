@@ -31,7 +31,7 @@ export default function Team() {
                 aria-label={`${name}'s LinkedIn profile`}
               >
                 <img
-                  src="/public/linkedin.png"
+                  src="/linkedin.png"
                   alt="linkedinprofile"
                   className="w-6 h-6"
                 />
